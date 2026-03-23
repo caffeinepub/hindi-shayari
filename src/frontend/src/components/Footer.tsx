@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import { SiGithub, SiInstagram, SiX } from "react-icons/si";
+import { SiInstagram } from "react-icons/si";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -69,24 +69,19 @@ export function Footer() {
                 Follow Us
               </h4>
               <div className="flex gap-3">
-                {[
-                  { icon: SiInstagram, label: "Instagram" },
-                  { icon: SiX, label: "X" },
-                  { icon: SiGithub, label: "GitHub" },
-                ].map(({ icon: Icon, label }) => (
-                  <button
-                    type="button"
-                    key={label}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center text-slate-400 hover:text-purple-300 transition-all hover:scale-110"
-                    style={{
-                      background: "rgba(255,255,255,0.06)",
-                      border: "1px solid rgba(255,255,255,0.10)",
-                    }}
-                    title={label}
-                  >
-                    <Icon className="w-4 h-4" />
-                  </button>
-                ))}
+                <a
+                  href="https://www.instagram.com/_berojgarr_engineer_45__?igsh=cDN5MjZlazU0eWxs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center text-slate-400 hover:text-pink-400 transition-all hover:scale-110"
+                  style={{
+                    background: "rgba(255,255,255,0.06)",
+                    border: "1px solid rgba(255,255,255,0.10)",
+                  }}
+                  title="Instagram"
+                >
+                  <SiInstagram className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>
